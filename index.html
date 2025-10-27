@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimización con Montecarlo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Optimización con Producción con Montecarlo </h1>
+
+  <div class="panel">
+    <h3>Parámetros</h3>
+
+    <div class="inputs">
+      <label>Horas corte: <input type="number" id="horasCorte" value="7" step="0.1"></label>
+      <label>Horas costura: <input type="number" id="horasCostura" value="8" step="0.1"></label>
+    </div>
+
+    <div class="inputs">
+      <span>Camisa (corte, costura, precio):</span>
+      <input type="number" id="camisaCorte" value="1" step="0.1" title="Horas de corte para camisa" placeholder="Corte camisa">
+      <input type="number" id="camisaCostura" value="2" step="0.1" title="Horas de costura para camisa" placeholder="Costura camisa">
+      <input type="number" id="camisaPrecio" value="12" step="0.1" title="Precio de la camisa" placeholder="Precio camisa">
+    </div>
+
+    <div class="inputs">
+      <span>Chaqueta (corte, costura, precio):</span>
+      <input type="number" id="chaquetaCorte" value="2" step="0.1" title="Horas de corte para chaqueta" placeholder="Corte chaqueta">
+      <input type="number" id="chaquetaCostura" value="3" step="0.1" title="Horas de costura para chaqueta" placeholder="Costura chaqueta">
+      <input type="number" id="chaquetaPrecio" value="25" step="0.1" title="Precio de la chaqueta" placeholder="Precio chaqueta">
+    </div>
+
+    <button id="runButton">Ejecutar Montecarlo</button>
+    <p id="resultado"></p>
+  </div>
+
+  <canvas id="grafico" width="500" height="500"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>
